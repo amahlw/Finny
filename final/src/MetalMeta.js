@@ -1,25 +1,25 @@
 import data from './metal.json'
 import React from 'react';
-import ReactDOM from 'react-dom';
 
 
+class MetalMeta extends React.Component {
+    bands = data.map(({ band_name, fans, formed, orgin }) => {
 
-const bands = data.map(({ band_name, fans, formed, orgin }) => {
+        return <this.bands
+            band_name={band_name}
+            fans={fans}
+            formed={formed}
+            orgin={orgin}
+        />
+    })
 
-    return MetalMeta(
-        band_name = { band_name },
-        fans = { fans },
-        formed = { formed },
-        orgin = { orgin }
-
-    )
-})
-function MetalMeta() {
-    return (
-        <div className="MetalMeta">
-            { bands}
-        </div>
-    )
+    render() {
+        return (
+            <div className="MetalMeta">
+                { this.bands}
+            </div>
+        )
+    }
 }
 
 export default MetalMeta
