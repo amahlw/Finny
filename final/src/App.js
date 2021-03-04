@@ -1,5 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
+import Heading from './Heading';
+import MetalMeta from './MetalMeta';
 
 function App() {
   return (
@@ -15,8 +17,11 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
+          <div id="root"></div>
           Learn React
         </a>
+        <Heading></Heading>
+        <MetalMeta></MetalMeta>
       </header>
     </div>
   );
