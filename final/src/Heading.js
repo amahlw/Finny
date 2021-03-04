@@ -8,5 +8,3 @@ class Heading extends React.Component {
     }
 }
 export default Heading;
-ReactDOM.render(<Heading name="Kashen Wright" />, document.getElementById('root'));
-
